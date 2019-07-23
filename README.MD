@@ -114,41 +114,19 @@ workon twenv
 ```
 (twenv)~ $ pip freeze
 -f /usr/share/pip-wheels
-attrs==19.1.0
-certifi==2019.6.16
-chardet==3.0.4
-Click==7.0
+...  
 dash==0.43.0
 dash-core-components==0.48.0
 dash-html-components==0.16.0
 dash-renderer==0.24.0
 dash-table==3.7.0
-decorator==4.4.0
-Flask==1.1.1
-Flask-Compress==1.4.0
-idna==2.8
-ipython-genutils==0.2.0
-itsdangerous==1.1.0
-Jinja2==2.10.1
-jsonschema==3.0.1
-jupyter-core==4.5.0
-MarkupSafe==1.1.1
-nbformat==4.4.0
-nltk==3.4.4
-oauthlib==3.0.2
+...
 plotly==2.5.1
-pyrsistent==0.15.3
-PySocks==1.7.0
-pytz==2019.1
-requests==2.22.0
-requests-oauthlib==1.2.0
-six==1.12.0
+...
 textblob==0.15.3
-traitlets==4.3.2
+...
 tweepy==3.6.0
-urllib3==1.25.3
-Werkzeug==0.15.4
-(twenv) 03:32 ~ $ 
+...
 ```  
 ### Configuring Web App  
 
