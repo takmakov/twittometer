@@ -10,7 +10,7 @@ It was created for educational purposes to demonstrate how to:
 ### Requirements
 1. Python 3x 
 2. Twitter account  
-3. For cloud deployment: [PythonAnywhere](www.pythonanywhere.com) account 
+3. For cloud deployment: [PythonAnywhere](https://www.pythonanywhere.com) account 
 (free account is good enough for the app to work as of July 2019)       
 4. Optional:   
   * Git, GitHub Desktop or any other GitHub client  
