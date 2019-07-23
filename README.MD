@@ -8,9 +8,9 @@ It was created for educational purposes to demonstrate how to:
   * do all of these with less than 100 lines of code  
   
 ### Requirements
-1. Installed Python 3x  
+1. Python 3x 
 2. Twitter account  
-3. For cloud deployment - [PythonAnywhere](www.pythonanywhere.com) account 
+3. For cloud deployment: [PythonAnywhere](www.pythonanywhere.com) account 
 (free account is good enough for the app to work as of July 2019)       
 4. Optional:   
   * Git, GitHub Desktop or any other GitHub client  
