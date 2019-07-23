@@ -1,0 +1,6 @@
+textblob==0.15.3
+tweepy==3.6.0
+plotly==2.5.1
+dash==0.43.0
+dash-core-components==0.48.0
+dash-html-components==0.16.0
