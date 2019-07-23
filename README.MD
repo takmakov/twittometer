@@ -179,3 +179,7 @@ This is needed to minimize unathorized use of your personal API access keys
 ### Disclaimer  
 This repository, code and instructions are created in my personal time for educational purposes only.   
 This repository and code is not part of any of my official position(s), official duties or affiliations.
+
+### Credits
+The sentiment analysis is taken from [Medium article](https://medium.com/@wilamelima/mining-twitter-for-sentiment-analysis-using-python-a74679b85546) of Wilame Lima Vallantin. 
+
