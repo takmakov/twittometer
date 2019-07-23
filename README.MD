@@ -89,11 +89,11 @@ without web interface
 
 ### Deployment to PythonAnywhere:
 
-1. Create free/beginner account on PythonAnywhere
-It is necessary to do everything fast, because there is only 100 sec per 24 hours of CPU time for free account  
-Also, avoid installing additional packages or adding other files, because free account has only 512 Mb  
-
-2. Open new Bash console and clone the repo  
+1. Create free/beginner account on PythonAnywhere.  
+It is necessary to do everything fast, 
+since free account has limit of 100 sec per 24 hours of CPU time. 
+Also, the disk limit is 512 Mb, so be careful with installing additional packages.
+2. Open new Bash console and clone the Twittometer repository from GitHub  
 ```
 git clone https://github.com/takmakov/twittometer.git
 ```
@@ -106,7 +106,7 @@ mkvirtualenv twenv --python=python3.6
 source virtualenvwrapper.sh
 workon twenv
 ```  
-5. Install packages listed in requirements.txt
+5. Install packages from *requirements.txt*  
 ```
 (twenv)~/twittometer $ pip install -r requirements.txt
 ```
