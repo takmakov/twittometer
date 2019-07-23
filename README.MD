@@ -138,29 +138,10 @@ tweepy==3.6.0
 4. For WSGI file, list the following path
 >WSGI configuration file:/var/www/yourusername_pythonanywhere_com_wsgi.py
 5. Click on WSGI file and edit it and save it per instructions below. 
-This file has a lot of information, but the only lines that we care about are shown below.
+This file has a lot of information, but the only lines that we care about are shown below.  
 These are the lines that are uncommented (not starting with '#')  
 
 ```
-
-HELLO_WORLD = """<html>
-<head>
-    <title>PythonAnywhere hosted web application</title>
-</head>
-<body>
-<h1>Hello, World!</h1>
-<p>
-    This is the default welcome page for a
-    <a href="https://www.pythonanywhere.com/">PythonAnywhere</a>
-    hosted web application.
-</p>
-<p>
-    Find out more about how to configure your own web application
-    by visiting the <a href="https://www.pythonanywhere.com/web_app_setup/">web app setup</a> page
-</p>
-</body>
-</html>"""
-
 
 def application(environ, start_response):
     if environ.get('PATH_INFO') == '/':
