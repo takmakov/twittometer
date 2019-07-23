@@ -80,9 +80,8 @@ tweepy==3.6.0
 ```
 python app.py
 ```
-8. In a web browser, go to [http://127.0.0.1:8050](http://127.0.0.1:8050) to access the app.  
-This is what it should look like:
-[Twittometer Screenshot](Twittometer.png?raw=true "Screenshot")
+8. In a web browser, go to [http://127.0.0.1:8050](http://127.0.0.1:8050) to access the app: 
+![Twittometer Screenshot](Twittometer.png?raw=true "Screenshot")
 
 9. (Optional) a Jupyter Notebook [twittometer.ipynb](twittometer.ipynb) shows how to use *twminer* function 
 without web interface
