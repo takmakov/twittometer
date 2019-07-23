@@ -3,7 +3,7 @@ import tweepy
 import twkeys
 
 def twminer(keyword, twcount):
-    """Search for Tweets for a keyword and determine Tweets sentiments"""
+    """Search Tweets with a keyword and determine their sentiments"""
 
     # Authentication with Twitter using API keys stored in twkeys.py file
     auth = tweepy.OAuthHandler(twkeys.C_KEY, twkeys.C_SECRET)
