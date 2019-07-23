@@ -1,33 +1,29 @@
 ### Introduction  
-Twittomtere is a simple web application that searches Twitter for Tweets with a given keyword, 
-analysis sentiments (positive or negative) and summarize results in a histogram. Twittometer created for 
-educational purposes to demonstrate how to:  
-  * use APIs to get the data
-  * use Natural Language Processing (NLP) to analyze text of the Tweets
-  * do data visualization and develop interactive dashboard  
-  * deploy the app on a cloud service to make it available for others  
-  * do all of it with less than 100 lines of code  
+Twittomtere is a web application to measure Twitter 'mood'. 
+It was created for educational purposes to demonstrate how to:  
+  * use APIs to get social network data programmatically
+  * use Natural Language Processing (NLP) to analyze text to determine sentiments
+  * visualize data via interactive web dashboard  
+  * deploy Twittometer on a cloud service, [PythonAnywhere](www.pythonanywhere.com)
+  * do all of these with less than 100 lines of code  
   
 ### Requirements
-1. Computer with installed Python 3x  
-2. Email account  
-3. Twitter account  
-4. For cloud deployment - [PythonAnywhere](www.pythonanywhere.com) account 
+1. Installed Python 3x  
+2. Twitter account  
+3. For cloud deployment - [PythonAnywhere](www.pythonanywhere.com) account 
 (free account is good enough for the app to work as of July 2019)       
-5. Optional:   
-  * Git, GtiHub Desktop or any other GitHub client  
+4. Optional:   
+  * Git, GitHub Desktop or any other GitHub client  
   * IDE, text/code editor  
 
 ### Getting Twitter API Access
-1. Create a Twitter account if you do not have one  
-2. Apply for developer account, fill the form, 
-3. Wait for approval and get API access credentials  (*can take several days*)  
-4. More details can be found here: https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html  
-5. This API credentials will be used later
+1. Create a Twitter account 
+2. Apply for developer account to [access API](https://developer.twitter.com/en/docs/basics/authentication/guides/access-tokens.html) 
+3. Wait for approval and get API credentials  (*can take several days*)  
 
 ### Running Code Locally:
-1. Get this repository (repo) to local machine using one of the options:
-  * download repo as a zip file:  
+1. Clone Twittometer repository to a local machine using one of the options:
+  * download it as a zip file:  
 [Click on 'Clone or download' and select zip](https://github.com/takmakov/twittometer/archive/master.zip)   
   * use command line [git](https://git-scm.com/) client:  
 ```
@@ -35,20 +31,20 @@ git clone https://github.com/takmakov/twittometer.git
 ```
   * use git client with visual interface, such as [GitHub Desktop](https://desktop.github.com/)
 
-2. Use text/code editor, modify *twkeys.py* file to input your API credentials:  
+2.  Modify *twkeys.py* file to input your API credentials using text/code editor:  
 ```
 C_KEY = "type yours here"  
 C_SECRET = "type yours here"  
 A_TOKEN = "type yours here"  
 A_SECRET = "type yours here"  
 ```
-3. Create virtual environment for this 'twenv' to avoid conflicts with other Python projects.
-This is not required, but highly recommended.
-Assuming Anaconda is used as a package manager   
+3. With Anaconda, Create virtual environment 'twenv':
+(This step is not required, but highly recommended.  
+It helps to avoid conflicts with other Python projects.)
 ```
 conda create -n twenv --python=python3.6
 ```
-4. Activate this environment  
+4. Activate created 'twenv' environment  
   * MacOS/Linux
 ```
 source activate twenv
@@ -57,12 +53,12 @@ source activate twenv
 ```
 activate twenv
 ```
-5. Install packages listed in requirements.txt  
+5. Install packages from *requirements.txt*  
 ```
 pip install -r requirements.txt
 ```
 
-6. Check that the packages are installed (the exact output may vary)  
+6. Confirm that the packages were installed (the exact output may vary)  
 ```
 (twenv)$ pip freeze
 ...
@@ -83,10 +79,12 @@ tweepy==3.6.0
 ```
 python app.py
 ```
-8. In web browser, go to [http://127.0.0.1:8050](http://127.0.0.1:8050) to access the app
+8. In a web browser, go to [http://127.0.0.1:8050](http://127.0.0.1:8050) to access the app.  
+This is what it should look like:
+[Twittometer Screenshot](Twittometer.png?raw=true "Screenshot")
 
-9. Complimentary Jupyter Notebook [twittometer.ipynb](twittometer.ipynb) demonstrates use of *twminer* function 
-including output for each Tweet
+9. (Optional) a Jupyter Notebook [twittometer.ipynb](twittometer.ipynb) shows how to use *twminer* function 
+without web interface
 
 
 ### Deployment to PythonAnywhere:
@@ -154,7 +152,7 @@ Werkzeug==0.15.4
 ```  
 ### Configuring Web App  
 
-1. Assumption: *yourusername* is your PythonAnywhere username 
+1. For the directions below, replace *yourusername* is your PythonAnywhere username.
 2. On PythonAnywhere Dashboard, go to 'Web' tab  
 3. On 'Web' tab, modify Code section
 >Source code: /home/yourusername/twittometer/app.py  
