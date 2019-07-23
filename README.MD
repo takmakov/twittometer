@@ -1,7 +1,7 @@
 ### Introduction  
-Twittomtere is a sentiment thermometer for Twitter.  
-This web application was built to measure Twitter 'mood'.  
-It was created for educational purposes to demonstrate how to:  
+Twittomtere is an interactive sentiment 'thermometer' for Twitter.  
+This web application can measure Twitter 'mood' for a given keyword and output the data as a histogram.  
+Twittometer was created for educational purposes to demonstrate how to:  
   * use APIs to get social network data programmatically
   * use Natural Language Processing (NLP) to analyze text to determine sentiments
   * visualize data via interactive web dashboard  
