@@ -83,8 +83,8 @@ python app.py
 8. In a web browser, go to [http://127.0.0.1:8050](http://127.0.0.1:8050) to access the app: 
 ![Twittometer Screenshot](Twittometer.png?raw=true "Screenshot")
 
-9. (Optional) a Jupyter Notebook [twittometer.ipynb](twittometer.ipynb) shows how to use *twminer* function 
-without web interface
+9. (Optional) Jupyter Notebook [twittometer.ipynb](twittometer.ipynb) shows how to use *twminer* function 
+without web interface and how to get full text of the found Tweets
 
 
 ### Deployment to PythonAnywhere:
@@ -173,8 +173,7 @@ This is needed to minimize unathorized use of your personal API access keys
 >Username: SET_USERNAME  
 >Password: SET_PASSWORD    
 8. Reload the app by going to the top of the 'Web' tab and clicking on a button in 'Reload' section
-9. Go to yourusername.pythonanywhere.com, type the web app access credentials ('SET_USERNAME' and 'SET_PASSWORD') and enjoy the app
-![Twittometer Screenshot](Twittometer.png?raw=true "Screenshot")
+9. Go to yourusername.pythonanywhere.com, type the web app access credentials ('SET_USERNAME' and 'SET_PASSWORD') to access the app
 
 
 ### Disclaimer  
