@@ -4,7 +4,7 @@ It was created for educational purposes to demonstrate how to:
   * use APIs to get social network data programmatically
   * use Natural Language Processing (NLP) to analyze text to determine sentiments
   * visualize data via interactive web dashboard  
-  * deploy Twittometer on a cloud service, [PythonAnywhere](www.pythonanywhere.com)
+  * deploy Twittometer on a cloud service, [PythonAnywhere](https://www.pythonanywhere.com)
   * do all of these with less than 100 lines of code  
   
 ### Requirements
