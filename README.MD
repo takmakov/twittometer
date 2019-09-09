@@ -130,19 +130,18 @@ tweepy==3.6.0
 ```  
 ### Configuring Web App  
 
-1. For the directions below, replace *yourusername* is your PythonAnywhere username.
+1. For the directions below, replace *yourusername* is your PythonAnywhere username.  
 2. On PythonAnywhere Dashboard, go to 'Web' tab  
-3. On 'Web' tab, modify Code section
+3. On 'Web' tab, modify Code section  
 >Source code: /home/yourusername/twittometer/app.py  
 >Working directory: /home/yourusername/twittometer/  
-4. For WSGI file, list the following path
->WSGI configuration file:/var/www/yourusername_pythonanywhere_com_wsgi.py
+4. For WSGI file, list the following path  
+>WSGI configuration file: /var/www/yourusername_pythonanywhere_com_wsgi.py
 5. Click on WSGI file and edit it and save it per instructions below. 
 This file has a lot of information, but the only lines that we care about are shown below.  
 These are the lines that are uncommented (not starting with '#')  
 
 ```
-
 def application(environ, start_response):
     if environ.get('PATH_INFO') == '/':
         status = '200 OK'
@@ -153,19 +152,26 @@ def application(environ, start_response):
     response_headers = [('Content-Type', 'text/html'), ('Content-Length', str(len(content)))]
     start_response(status, response_headers)
     yield content.encode('utf8')
+```
 
+```
 import sys
+```
 
+```
 path = '/home/yourusername/twittometer'
 if path not in sys.path:
     sys.path.append(path)
+```
 
+```
 from app import app
 application = app.server
 ```
 6. Go back to 'Web' tab and edit virtual environments section    
 >Virtualenv:  
 >/home/yourusername/.virtualenvs/twenv/  
+
 7. Proceed edit the following items adding username (SET_USERNAME) and password (SET_PASSWORD).
 This is needed to minimize unathorized use of your personal API access keys  
 >Force HTTPS: Enabled  
@@ -174,7 +180,6 @@ This is needed to minimize unathorized use of your personal API access keys
 >Password: SET_PASSWORD    
 8. Reload the app by going to the top of the 'Web' tab and clicking on a button in 'Reload' section
 9. Go to yourusername.pythonanywhere.com, type the web app access credentials ('SET_USERNAME' and 'SET_PASSWORD') to access the app
-
 
 ### Disclaimer  
 This repository, code and instructions are created in my personal time for educational purposes only.   
