@@ -113,7 +113,6 @@ workon twenv
 6. Check that the packages are installed (the exact output may vary)  
 ```
 (twenv)~ $ pip freeze
--f /usr/share/pip-wheels
 ...  
 dash==0.43.0
 dash-core-components==0.48.0
@@ -133,7 +132,7 @@ tweepy==3.6.0
 1. For the directions below, replace *yourusername* is your PythonAnywhere username.  
 2. On PythonAnywhere Dashboard, go to 'Web' tab  
 3. On 'Web' tab, modify Code section  
->Source code: /home/yourusername/twittometer/app.py  
+>Source code: /home/yourusername/twittometer/
 >Working directory: /home/yourusername/twittometer/  
 4. For WSGI file, list the following path  
 >WSGI configuration file: /var/www/yourusername_pythonanywhere_com_wsgi.py
